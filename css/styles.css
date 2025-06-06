@@ -127,6 +127,15 @@ nav li > .sub-menu:hover  {
     margin-bottom: 30px;
     padding: 20px 0;
 }
+#dropdown {
+    height: 100px;
+}
+#big {
+    height: 60px;
+}
+#bigger {
+    height: 100px;
+}
 /**Home Page**/
 body.home {
     background-color: #efefef;
@@ -377,6 +386,7 @@ ul.paw-list li::before {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: center;
 }
 
 .contact-container .form-container {
@@ -474,6 +484,15 @@ footer img {
     border: 1px solid black;
 }
 
+.address-container .form-container {
+    margin: 20px;
+    width: 1fr;
+}
+
+#map{
+    margin: auto;
+}
+
 /**Tablet Styles**/
 @media only screen and (max-width: 1040px) {
     .community {
@@ -488,6 +507,16 @@ footer img {
     }
     .features-page .feature-page-block {
         width: 40%;
+    }
+
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+
+    #map iframe {
+        width: 100%;
+        height: 100%;
     }
 }
 

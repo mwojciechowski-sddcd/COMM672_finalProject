@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+SA+Hand:wght@400..700&display=swap" rel="stylesheet">
-    <title>Contact Purrfect Vibes</title>
+    <title>Contact Children's Garden</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -50,20 +50,23 @@
     </section>
     <section class="container">
         <div class="contact-container">
-            <div class="address-container">
+            <div id="map" class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26834.119172803395!2d-117.19263010359354!3d32.78523481421938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80deaaad499687a9%3A0xa55ea30ee15a4786!2sLinda%20Vista%2C%20San%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1749171940340!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="address-container container">
                 <address>
-                    Purrfect Vibes HQ<br>
-                    123 Whisker Lane<br>
-                    Meowtown, CA 90210<br>
-                    (555) 867-5309
+                    Contact Us:<br>
+                    Children's Garden<br>
+                    Linda Vista<br>
+                    San Diego, CA 92111<br>
+                    Tel. (800) DAY-CARE<br>
                 </address>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429155.65857764304!2d-117.43811264109726!3d32.82463122394523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1737656035689!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="form-container">
-                <p><em>Note: Fields highlighted in red are required.</em></p>
+                <p><em>Note: Fields highlighted in red are required.</em></p><br>
                 <form action="" method="post">
                     <div class="form-group">
-                        <label>First Name:</label>
+                        <label>Child's First Name:</label>
                         <input type="text" name="fname" maxlength="30" required placeholder="First Name">
                     </div>
                     <div class="form-group">
@@ -71,7 +74,7 @@
                         <input type="text" name="lname" maxlength="30" required placeholder="Last Name">
                     </div>
                     <div class="form-group">
-                        <label>Organization (if any):</label>
+                        <label>Relationship:</label>
                         <input type="text" name="organization" maxlength="30" placeholder="Optional">
                     </div>
                     <div class="form-group">
@@ -83,59 +86,60 @@
                         <input type="email" name="email" maxlength="30" autocomplete="email" required placeholder="example@domain.com">
                     </div>
                     <div class="form-group">
-                        <label>Feline Interests:</label>
+                        <label>Childcare Interests:</label>
                         <div class="inline-checkbox">
-                            <input type="checkbox" name="interest" id="wellness" value="Cat Wellness">
-                            <label for="wellness">Cat Wellness</label>
+                            <input type="checkbox" name="interest" id="wellness" value="Outdoor Play">
+                            <label for="wellness">Outdoor Play</label>
                         </div>
                         <div class="inline-checkbox">
-                            <input type="checkbox" name="interest" id="training" value="Cat Training"> 
-                            <label for="training">Cat Training</label>
+                            <input type="checkbox" name="interest" id="training" value="Learning Activities"> 
+                            <label for="training">Learning Activities</label>
                         </div>
                         <div class="inline-checkbox">
-                            <input type="checkbox" name="interest" id="adoption" value="Cat Adoption">
-                            <label for="adoption">Cat Adoption</label>
+                            <input type="checkbox" name="interest" id="adoption" value="Curriculum Offerings">
+                            <label for="adoption">Curriculum Offerings</label>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Your Cat's Lifestyle:</label>
+                        <label>Preferred Schedule:</label>
                         <div class="inline-checkbox">
-                            <input type="radio" name="lifestyle" id="indoor" value="Indoor">
-                            <label for="indoor">Indoor Cat</label>
+                            <input type="radio" name="lifestyle" id="both" value="Full Day">
+                            <label for="both">Full Day</label>
                         </div>
                         <div class="inline-checkbox">
-                            <input type="radio" name="lifestyle" id="outdoor" value="Outdoor">
-                            <label for="outdoor">Outdoor Cat</label>
+                            <input type="radio" name="lifestyle" id="indoor" value="Morning">
+                            <label for="indoor">Morning</label>
                         </div>
                         <div class="inline-checkbox">
-                            <input type="radio" name="lifestyle" id="both" value="Both">
-                            <label for="both">Both</label>
+                            <input type="radio" name="lifestyle" id="outdoor" value="Afternoon">
+                            <label for="outdoor">Afternoon</label>
                         </div>
                     </div>
-                    <div class="form-group full-width">
-                        <label>How many cats do you have?</label>
-                        <select name="catcount">
+                    <div id="dropdown" class="form-group full-width">
+                        <label>How many children would you like to enroll?</label>
+                        <select id="big" name="catcount">
                             <option value="0">None</option>
                             <option value="1">1</option>
-                            <option value="2-3">2-3</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                             <option value="4+">4 or more</option>
                         </select>
                     </div>
                     <div class="form-group full-width">
-                        <label>How did you hear about Purrfect Vibes?</label>
-                        <select name="hearaboutus" multiple size="5">
-                            <option value="Social Media">Social Media</option>
+                        <label>How did you hear about Children's Garden?</label>
+                        <select id="bigger" name="hearaboutus" multiple size="5">
                             <option value="Friend/Family">Friend/Family</option>
-                            <option value="Pet Store">Pet Store</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="Online Add">Pet Store</option>
                             <option value="Internet Search">Internet Search</option>
                             <option value="Other">Other</option>
                         </select>
                     </div>
                     <div class="form-group full-width">
-                        <label>Questions or Purrs?</label> 
+                        <label>Daycare Questions</label> 
                         <textarea name="comments" maxlength="500" placeholder="Share your thoughts with us!"></textarea>
                     </div>
-                    <input type="submit" value="Submit to Purrfect Vibes">
+                    <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
@@ -150,7 +154,7 @@
             <a href="#"><img src="../images/youtube.svg" alt="Youtube"></a>
         </div>
         <p>
-            Contact Us<br>
+            Contact Us:<br>
             Children's Garden<br>
             Linda Vista<br>
             San Diego, CA 92111<br>
